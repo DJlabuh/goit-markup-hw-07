@@ -1,0 +1,13 @@
+.filter {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+.filter>.item {
+  margin-right: 8px;
+}
+
+.filter>.item:nth-child(5n) {
+  margin-right: 0;
+}

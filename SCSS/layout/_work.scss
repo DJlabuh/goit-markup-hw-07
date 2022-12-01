@@ -1,0 +1,37 @@
+.work {
+  display: flex;
+}
+
+.work>.item {
+  flex-basis: calc((100% - 60px) / 3);
+  margin-right: 30px;
+}
+
+.work>.item:nth-child(3n) {
+  margin-right: 0;
+}
+
+.work .picture-wrap {
+  position: relative;
+}
+
+.work .picture {
+  display: block;
+}
+
+.work .description {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding-top: 27px;
+  padding-bottom: 27px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  background: rgba(47, 48, 58, 0.8);
+  color: var(--white-color);
+}
