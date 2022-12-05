@@ -36,20 +36,18 @@
   display: flex;
 }
 
-.site-nav>.item {
+.nav__item {
   display: flex;
   position: relative;
+  & + & {
+    margin-left: 50px;
+  }
+  &:last-child {
+    margin-right: 32px;
+  }
 }
 
-.site-nav>.item+.item {
-  margin-left: 50px;
-}
-
-.site-nav>.item:last-child {
-  margin-right: 32px;
-}
-
-.site-nav .link {
+.nav__link {
   display: block;
   padding-top: 32px;
   padding-bottom: 32px;
@@ -60,57 +58,53 @@
   text-decoration: none;
   color: var(--primary-text-color);
   transition: color var(--time) var(--timing-function);
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+  &--current {
+    color: var(--accent-color);
+    &::after {
+      display: block;
+      position: absolute;
+      content: '';
+      bottom: -1px;
+      left: -2px;
+      width: calc(100% + 4px);
+      height: 4px;
+      background-color: var(--accent-color);
+    }
+  }
 }
 
-.site-nav .link:hover,
-.site-nav .link:focus {
-  color: var(--accent-color);
-}
-
-.site-nav .link.current {
-  color: var(--accent-color);
-}
-
-.site-nav .link.current::after {
-  display: block;
-  position: absolute;
-  content: '';
-  bottom: -1px;
-  left: -2px;
-  width: calc(100% + 4px);
-  height: 4px;
-  background-color: var(--accent-color);
-}
-
-.contacts.list {
+.contacts {
   display: flex;
 }
 
-.contacts>.item+.item {
+.contacts__item + .contacts__item {
   margin-left: 50px;
 }
 
-.contacts .link {
+.contacts__link {
   display: flex;
   padding-top: 32px;
   padding-bottom: 32px;
   align-items: center;
-  color: var(--title-text-color);
-  fill: var(--title-text-color);
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
   text-decoration: none;
+  color: var(--title-text-color);
+  fill: var(--title-text-color);
   transition: color var(--time) var(--timing-function), fill var(--time) var(--timing-function);
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+    fill: var(--accent-color);
+  }
 }
 
-.contacts .link:hover,
-.contacts .link:focus {
-  color: var(--accent-color);
-  fill: var(--accent-color);
-}
-
-.contacts .icon {
+.contacts__icon {
   margin-right: 10px;
 }

@@ -27,22 +27,24 @@
         <nav class="nav">
           <a href="/" class="logo"><span class="logo__text">Web</span>Studio</a>
           <ul class="nav__list list">
-            <li class="nav__item"><a href="./index.html" class="link current">Студія</a></li>
-            <li class="nav__item"><a href="./portfolio.html" class="link">Портфоліо</a></li>
-            <li class="nav__item"><a href="" class="link">Контакти</a></li>
+            <li class="nav__item">
+              <a href="./index.html" class="nav__link nav__link--current">Студія</a>
+            </li>
+            <li class="nav__item"><a href="./portfolio.html" class="nav__link">Портфоліо</a></li>
+            <li class="nav__item"><a href="" class="nav__link">Контакти</a></li>
           </ul>
         </nav>
         <ul class="contacts list">
-          <li class="item">
-            <a href="mailto:info@devstudio.com" class="link">
-              <svg class="icon" width="16" height="12">
+          <li class="contacts__item">
+            <a href="mailto:info@devstudio.com" class="contacts__link">
+              <svg class="contacts__icon" width="16" height="12">
                 <use href="./images/icons.svg#envelope"></use></svg
               >info@devstudio.com
             </a>
           </li>
-          <li class="item">
-            <a href="tel:+380961111111" class="link">
-              <svg class="icon" width="10" height="16">
+          <li class="contacts__item">
+            <a href="tel:+380961111111" class="contacts__link">
+              <svg class="contacts__icon" width="10" height="16">
                 <use href="./images/icons.svg#smartphone"></use></svg
               >+38 096 111 11 11
             </a>
@@ -52,14 +54,14 @@
     </header>
     <main>
       <section class="hero">
-        <h1 class="hero-title">Ефективні рішення для<br />вашого бізнесу</h1>
-        <button type="button" class="button primary hero-btn" data-modal-open>
+        <h1 class="hero__title">Ефективні рішення для<br />вашого бізнесу</h1>
+        <button type="button" class="button primary hero__btn" data-modal-open>
           Замовити послугу
         </button>
       </section>
-      <section class="section section-features">
+      <section class="section section--features">
         <div class="container">
-          <h2 class="section-title visually-hidden">Наші переваги</h2>
+          <h2 class="section__title visually-hidden">Наші переваги</h2>
           <ul class="features list">
             <li class="item">
               <div class="icon-bg">
@@ -108,7 +110,7 @@
       </section>
       <section class="section">
         <div class="container">
-          <h2 class="section-title">Чим ми займаємося</h2>
+          <h2 class="section__title">Чим ми займаємося</h2>
           <ul class="work list">
             <li class="item">
               <div class="picture-wrap">
@@ -151,7 +153,7 @@
       </section>
       <section class="section command">
         <div class="container">
-          <h2 class="section-title">Наша команда</h2>
+          <h2 class="section__title">Наша команда</h2>
           <ul class="command-info list">
             <li class="item">
               <img
@@ -330,7 +332,7 @@
       </section>
       <section class="section clients">
         <div class="container">
-          <h2 class="section-title">Постійні клієнти</h2>
+          <h2 class="section__title">Постійні клієнти</h2>
           <ul class="clients-list list">
             <li class="item">
               <a href="#" class="link">

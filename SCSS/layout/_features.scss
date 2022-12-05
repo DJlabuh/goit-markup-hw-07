@@ -1,4 +1,4 @@
-.section-features {
+.section--features {
   padding-bottom: 0;
 }
 
@@ -6,12 +6,12 @@
   display: flex;
 }
 
-.features>.item {
+.features > .item {
   flex-basis: calc((100% - 90px) / 4);
   margin-right: 30px;
 }
 
-.features>.item:nth-child(4n) {
+.features > .item:nth-child(4n) {
   margin-right: 0;
 }
 
