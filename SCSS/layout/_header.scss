@@ -2,13 +2,13 @@
   border-bottom: 1px solid #ececec;
 }
 
-.container.page-header {
+.container--header {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
-.container>.page-nav {
+.nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -24,15 +24,15 @@
   text-decoration: none;
 }
 
-.logo-start {
+.logo__text {
   color: var(--accent-color);
 }
 
-.logo-end {
+.logo__text--footer {
   color: var(--white-color);
 }
 
-.site-nav.list {
+.nav__list {
   display: flex;
 }
 
