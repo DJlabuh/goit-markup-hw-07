@@ -675,6 +675,9 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+.main__filter {
   margin-bottom: 50px;
 }
 
