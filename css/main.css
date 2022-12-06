@@ -159,7 +159,7 @@ body {
   border-bottom: 1px solid #ececec;
 }
 
-.container-header {
+.header__container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
