@@ -925,7 +925,7 @@ body {
   border-color: var(--accent-color);
 }
 
-.policy-label {
+.form__policy-label {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -939,7 +939,7 @@ body {
   padding: 10px 0 20px 12px;
 }
 
-.policy-label span {
+.form__square {
   width: 16px;
   height: 15px;
   border: 2px solid var(--primary-text-color);
@@ -958,21 +958,15 @@ body {
   -webkit-transition: border-color var(--time) var(--timing-function), fill var(--time) var(--timing-function);
   transition: border-color var(--time) var(--timing-function), fill var(--time) var(--timing-function);
 }
-
-.modal-check:checked + .policy-label span {
+.form__check:checked + .form__policy-label .form__square {
   background-color: var(--accent-color);
   border: none;
   fill: var(--white-color);
 }
-
-.modal-check:focus + .policy-label span {
+.form__check:focus + .form__policy-label .form__square, .form__check:hover + .form__policy-label .form__square {
   border-color: var(--accent-color);
 }
 
-.modal-check:hover + .policy-label span {
-  border-color: var(--accent-color);
-}
-
-.policy-link {
+.form__policy-link {
   color: #2196f3;
 }/*# sourceMappingURL=main.css.map */
