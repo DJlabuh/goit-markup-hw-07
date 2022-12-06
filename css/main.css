@@ -411,7 +411,7 @@ body {
   color: var(--white-color);
 }
 
-.section-command {
+.main__section {
   background-color: var(--button-color);
 }
 
@@ -546,7 +546,7 @@ body {
   background-color: var(--footer-color);
 }
 
-.container-footer {
+.footer__container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
