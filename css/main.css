@@ -592,7 +592,7 @@ body {
   color: var(--accent-color);
 }
 
-.join-social {
+.footer__join-social {
   margin-left: 70px;
 }
 
@@ -645,7 +645,7 @@ body {
   fill: var(--white-color);
 }
 
-.subscribe {
+.footer__subscribe {
   margin-left: auto;
 }
 
