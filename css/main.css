@@ -293,8 +293,6 @@ body {
 .hero {
   max-width: 1600px;
   height: 600px;
-  margin-left: auto;
-  margin-right: auto;
   background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/hero-bg.jpg);
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-bg.jpg);
   background-repeat: no-repeat;
@@ -303,6 +301,11 @@ body {
   padding: 200px 0;
   background-color: var(--footer-color);
   text-align: center;
+}
+
+.main__hero {
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .hero__title {
@@ -317,7 +320,7 @@ body {
   text-transform: uppercase;
 }
 
-.section-features {
+.main__features {
   padding-bottom: 0;
 }
 
