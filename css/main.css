@@ -675,11 +675,10 @@ body {
   margin-bottom: 50px;
 }
 
-.filter > .item {
+.filter__item {
   margin-right: 8px;
 }
-
-.filter > .item:nth-child(5n) {
+.filter__item:nth-child(5n) {
   margin-right: 0;
 }
 
