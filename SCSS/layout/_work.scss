@@ -2,24 +2,23 @@
   display: flex;
 }
 
-.work>.item {
+.work__item {
   flex-basis: calc((100% - 60px) / 3);
   margin-right: 30px;
+  &:nth-child(3n) {
+    margin-right: 0;
+  }
 }
 
-.work>.item:nth-child(3n) {
-  margin-right: 0;
-}
-
-.work .picture-wrap {
+.work__wrap-img {
   position: relative;
 }
 
-.work .picture {
+.work__img {
   display: block;
 }
 
-.work .description {
+.work__description {
   position: absolute;
   bottom: 0;
   left: 0;
