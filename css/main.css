@@ -500,23 +500,22 @@ body {
   fill: currentColor;
 }
 
-.clients-list {
+.clients {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-.clients-list > .item {
+.clients__item {
   -ms-flex-preferred-size: calc((100% - 150px) / 6);
       flex-basis: calc((100% - 150px) / 6);
   margin-right: 30px;
 }
-
-.clients-list > .item:nth-child(6n) {
+.clients__item:nth-child(6n) {
   margin-right: 0;
 }
 
-.clients-list .link {
+.clients__link {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -532,14 +531,12 @@ body {
   -webkit-transition: color var(--time) var(--timing-function), border-color var(--time) var(--timing-function);
   transition: color var(--time) var(--timing-function), border-color var(--time) var(--timing-function);
 }
-
-.clients-list .link:hover,
-.clients-list .link:focus {
+.clients__link:hover, .clients__link:focus {
   color: var(--accent-color);
   border-color: var(--accent-color);
 }
 
-.clients-list .icon {
+.clients__icon {
   fill: currentColor;
 }
 
