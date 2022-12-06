@@ -56,12 +56,12 @@ body {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
-  cursor: pointer;
   border: none;
   border-radius: 4px;
   padding-top: 6px;
   padding-bottom: 6px;
   text-align: center;
+  cursor: pointer;
 }
 
 .button.primary {
@@ -83,8 +83,7 @@ body {
   transition: color var(--time) var(--timing-function), background-color var(--time) var(--timing-function), box-shadow var(--time) var(--timing-function);
   transition: color var(--time) var(--timing-function), background-color var(--time) var(--timing-function), box-shadow var(--time) var(--timing-function), -webkit-box-shadow var(--time) var(--timing-function);
 }
-.button.secondary .button.secondary:hover,
-.button.secondary .button.secondary:focus {
+.button.secondary:hover, .button.secondary:focus {
   color: var(--white-color);
   background-color: var(--accent-color);
   -webkit-box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
@@ -800,7 +799,7 @@ body {
   transition: opacity var(--time) var(--timing-function), visibility var(--time) var(--timing-function);
 }
 
-.backdrop.is-hidden {
+.is-hidden {
   visibility: hidden;
   opacity: 0;
   pointer-events: none;
@@ -821,7 +820,7 @@ body {
   border-radius: 4px;
 }
 
-.modal > .icon-wrap {
+.modal__icon-wrap {
   position: absolute;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -841,17 +840,16 @@ body {
   cursor: pointer;
 }
 
-.modal .icon {
+.modal__icon {
   fill: var(--black-color);
   -webkit-transition: fill var(--time) var(--timing-function);
   transition: fill var(--time) var(--timing-function);
 }
-
-.modal > .icon-wrap:hover .icon {
+.modal__icon-wrap:hover .modal__icon {
   fill: var(--accent-color);
 }
 
-.modal-title {
+.modal__title {
   font-weight: 700;
   font-size: 20px;
   line-height: 0.86;
@@ -861,11 +859,11 @@ body {
   margin-bottom: 30px;
 }
 
-.modal-field {
+.form__field {
   margin-bottom: 10px;
 }
 
-.modal-label {
+.form__label {
   display: block;
   text-align: left;
   margin-bottom: 4px;
@@ -875,11 +873,11 @@ body {
   letter-spacing: 0.01em;
 }
 
-.input-wrap {
+.form__input-wrap {
   position: relative;
 }
 
-.modal-input {
+.form__input {
   width: 100%;
   height: 40px;
   font-size: 12px;
@@ -891,8 +889,11 @@ body {
   -webkit-transition: border-color var(--time) var(--timing-function);
   transition: border-color var(--time) var(--timing-function);
 }
+.form__input:hover, .form__input:focus {
+  border-color: var(--accent-color);
+}
 
-.modal-icon {
+.form__icon {
   position: absolute;
   top: 50%;
   left: 15px;
@@ -902,8 +903,11 @@ body {
   -webkit-transition: fill var(--time) var(--timing-function);
   transition: fill var(--time) var(--timing-function);
 }
+.form__input:hover + .form__icon, .form__input:focus + .form__icon {
+  fill: var(--accent-color);
+}
 
-.modal-textarea {
+.form__textarea {
   display: block;
   width: 100%;
   height: 120px;
@@ -917,17 +921,8 @@ body {
   -webkit-transition: border-color var(--time) var(--timing-function);
   transition: border-color var(--time) var(--timing-function);
 }
-
-.modal-input:hover,
-.modal-input:focus,
-.modal-textarea:hover,
-.modal-textarea:focus {
+.form__textarea:hover, .form__textarea:focus {
   border-color: var(--accent-color);
-}
-
-.modal-input:hover + .modal-icon,
-.modal-input:focus + .modal-icon {
-  fill: var(--accent-color);
 }
 
 .policy-label {
@@ -979,5 +974,5 @@ body {
 }
 
 .policy-link {
-  color: #2196F3;
+  color: #2196f3;
 }/*# sourceMappingURL=main.css.map */
