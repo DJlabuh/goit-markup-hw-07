@@ -11,7 +11,7 @@
   cursor: pointer;
 }
 
-.button.primary {
+.button--primary {
   color: var(--white-color);
   background-color: var(--accent-color);
   padding-left: 25px;
@@ -20,7 +20,7 @@
     0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
-.button.secondary {
+.button--secondary {
   color: var(--primary-text-color);
   background-color: var(--button-color);
   padding-left: 22px;
@@ -37,7 +37,7 @@
   }
 }
 
-.hero__btn {
+.button--hero {
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
@@ -50,19 +50,19 @@
   }
 }
 
-.button.footer-btn {
+.button--footer {
   padding: 10px 28px;
   display: inline-flex;
   align-items: center;
   width: 200px;
 }
 
-.footer-btn__icon {
+.button__icon {
   margin-left: 10px;
   fill: var(--white-color);
 }
 
-.button.modal-btn {
+.button--modal {
   width: 200px;
   height: 50px;
   padding: 10px 52px;

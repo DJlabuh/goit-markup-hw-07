@@ -64,7 +64,7 @@ body {
   cursor: pointer;
 }
 
-.button.primary {
+.button--primary {
   color: var(--white-color);
   background-color: var(--accent-color);
   padding-left: 25px;
@@ -73,7 +73,7 @@ body {
           box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
-.button.secondary {
+.button--secondary {
   color: var(--primary-text-color);
   background-color: var(--button-color);
   padding-left: 22px;
@@ -83,14 +83,14 @@ body {
   transition: color var(--time) var(--timing-function), background-color var(--time) var(--timing-function), box-shadow var(--time) var(--timing-function);
   transition: color var(--time) var(--timing-function), background-color var(--time) var(--timing-function), box-shadow var(--time) var(--timing-function), -webkit-box-shadow var(--time) var(--timing-function);
 }
-.button.secondary:hover, .button.secondary:focus {
+.button--secondary:hover, .button--secondary:focus {
   color: var(--white-color);
   background-color: var(--accent-color);
   -webkit-box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
           box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
-.hero__btn {
+.button--hero {
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
@@ -99,11 +99,11 @@ body {
   -webkit-transition: background-color var(--time) var(--timing-function);
   transition: background-color var(--time) var(--timing-function);
 }
-.hero__btn:hover, .hero__btn:focus {
+.button--hero:hover, .button--hero:focus {
   background-color: #188ce8;
 }
 
-.button.footer-btn {
+.button--footer {
   padding: 10px 28px;
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
@@ -114,12 +114,12 @@ body {
   width: 200px;
 }
 
-.footer-btn__icon {
+.button__icon {
   margin-left: 10px;
   fill: var(--white-color);
 }
 
-.button.modal-btn {
+.button--modal {
   width: 200px;
   height: 50px;
   padding: 10px 52px;
@@ -129,7 +129,7 @@ body {
   -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
           box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
-.button.modal-btn:hover, .button.modal-btn:focus {
+.button--modal:hover, .button--modal:focus {
   background-color: #188ce8;
 }
 
@@ -690,22 +690,20 @@ body {
       flex-wrap: wrap;
 }
 
-.project > .item {
+.project__item {
   -ms-flex-preferred-size: calc((100% - 60px) / 3);
       flex-basis: calc((100% - 60px) / 3);
   margin-right: 30px;
   margin-bottom: 30px;
 }
-
-.project > .item:nth-child(3n) {
+.project__item:nth-child(3n) {
   margin-right: 0;
 }
-
-.project > .item:nth-last-child(-n+3) {
+.project__item:nth-last-child(-n+3) {
   margin-bottom: 0;
 }
 
-.project .link {
+.project__link {
   display: block;
   text-decoration: none;
   -webkit-transition: -webkit-box-shadow var(--time) var(--timing-function);
@@ -713,23 +711,21 @@ body {
   transition: box-shadow var(--time) var(--timing-function);
   transition: box-shadow var(--time) var(--timing-function), -webkit-box-shadow var(--time) var(--timing-function);
 }
-
-.project .link:hover,
-.project .link:focus {
+.project__link:hover, .project__link:focus {
   -webkit-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
           box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
-.project .thumb {
+.project__thumb {
   position: relative;
   overflow: hidden;
 }
 
-.project .picture {
+.project__picture {
   display: block;
 }
 
-.project .hover-overlay {
+.project__hover-overlay {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -755,21 +751,19 @@ body {
   transition: transform var(--time) var(--timing-function);
   transition: transform var(--time) var(--timing-function), -webkit-transform var(--time) var(--timing-function);
 }
-
-.project .link:hover .hover-overlay,
-.project .link:focus .hover-overlay {
+.project__link:hover .project__hover-overlay, .project__link:focus .project__hover-overlay {
   -webkit-transform: translateY(-100%);
           transform: translateY(-100%);
 }
 
-.project .description {
+.project__description {
   padding: 20px 24px;
   border-right: 1px solid #eeeeee;
   border-bottom: 1px solid #eeeeee;
   border-left: 1px solid #eeeeee;
 }
 
-.project .title {
+.project__title {
   margin-bottom: 4px;
   color: var(--primary-text-color);
   font-weight: 700;
@@ -778,7 +772,7 @@ body {
   letter-spacing: 0.06em;
 }
 
-.project .product {
+.project__product {
   color: var(--title-text-color);
   font-size: 16px;
   line-height: 1.87;

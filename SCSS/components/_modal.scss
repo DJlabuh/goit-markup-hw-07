@@ -152,10 +152,10 @@
   transition: border-color var(--time) var(--timing-function),
     fill var(--time) var(--timing-function);
   .form__check:checked+.form__policy-label & {
-      background-color: var(--accent-color);
-      border: none;
-      fill: var(--white-color);
-    }
+    background-color: var(--accent-color);
+    border: none;
+    fill: var(--white-color);
+  }
   .form__check:focus+.form__policy-label &,
   .form__check:hover+.form__policy-label & {
     border-color: var(--accent-color);
